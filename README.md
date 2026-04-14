@@ -1,12 +1,5 @@
 # XYZ Toolkit
 
-<!-- BrandCloud:readme-standard -->
-[![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Showcase](https://img.shields.io/badge/Portfolio-Showcase-blue.svg)](#)
-
-_Part of the `sakib-maho` project showcase series with consistent documentation and quality standards._
-
 `xyz` is now a practical Python command line toolkit for common text and hashing tasks.
 It is designed as a lightweight utility project that demonstrates clean module structure,
 testing, and developer-friendly CLI design.
@@ -19,6 +12,12 @@ testing, and developer-friendly CLI design.
 - `hash` command to generate SHA-256 for text or files
 - Unit tests for utilities and CLI behavior
 
+## Tech Stack
+
+- Python 3.10+
+- Standard library (`argparse`, `hashlib`, `json`, `re`)
+- `pytest` for tests
+
 ## Quick Start
 
 ```bash
@@ -27,23 +26,7 @@ cd xyz
 python3 -m pip install pytest
 ```
 
-## Tests
-
-```bash
-python3 -m pytest -q
-```
-
-## License
-
-MIT License. See `LICENSE`.
-
-## Tech Stack
-
-- Python 3.10+
-- Standard library (`argparse`, `hashlib`, `json`, `re`)
-- `pytest` for tests
-
-## Usage
+## CLI Examples
 
 ```bash
 python3 cli.py slugify "Hello Portfolio"
@@ -51,6 +34,12 @@ python3 cli.py freq "AI tools for ai engineers and tools"
 python3 cli.py punct "Hello!!!"
 python3 cli.py hash --text "important data"
 python3 cli.py hash --file README.md
+```
+
+## Run Tests
+
+```bash
+python3 -m pytest -q
 ```
 
 ## Project Structure
@@ -66,3 +55,7 @@ xyz/
     ├── test_hash_utils.py
     └── test_text_utils.py
 ```
+
+## License
+
+MIT License. See `LICENSE`.
