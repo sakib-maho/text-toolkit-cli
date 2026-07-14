@@ -1,4 +1,4 @@
-# XYZ Toolkit
+# Text Toolkit CLI
 
 `xyz` is now a practical Python command line toolkit for common text and hashing tasks.
 It is designed as a lightweight utility project that demonstrates clean module structure,
@@ -21,8 +21,8 @@ testing, and developer-friendly CLI design.
 ## Quick Start
 
 ```bash
-git clone https://github.com/sakib-maho/xyz.git
-cd xyz
+git clone https://github.com/sakib-maho/text-toolkit-cli.git
+cd text-toolkit-cli
 python3 -m pip install pytest
 ```
 
