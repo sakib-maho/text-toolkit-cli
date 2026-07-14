@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import hmac
 from pathlib import Path
 
 
@@ -18,3 +19,8 @@ def sha256_file(path: Path) -> str:
         for chunk in iter(lambda: file_handle.read(8192), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def hmac_sha256(key: str, content: str) -> str:
+    """Return HMAC-SHA256 for a text payload."""
+    return hmac.new(key.encode("utf-8"), content.encode("utf-8"), hashlib.sha256).hexdigest()
